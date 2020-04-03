@@ -5,19 +5,19 @@ variable "kthw" {
 }
 
 variable "gcp_region" {
-  type = string
+  type        = string
   description = "Default region for the GCP project."
-  default = "us-west1"
+  default     = "us-west1"
 }
 
 variable "gcp_zone" {
-  type = string
+  type        = string
   description = "Default zone for the GCP project."
-  default = "us-west1-c"
+  default     = "us-west1-c"
 }
 
 variable "gcp_project" {
-  type = string
+  type        = string
   description = "The GCP project name."
-  default = "solid-linker-238123"
+  default     = "solid-linker-238123"
 }
