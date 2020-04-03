@@ -10,6 +10,10 @@ This repo contains the Terraform that sets up Kubernetes using Google Cloud Plat
 1. Run `terraform plan`.
 1. Run `terraform apply`.
 
+## Documentation
+
+- [The Network](/docs/network.md)
+
 ## Workflow
 
 ### Starting a session
