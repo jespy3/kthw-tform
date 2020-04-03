@@ -34,3 +34,21 @@ resource "google_compute_firewall" "kubernetes_the_hard_way_allow_internal" {
     protocol = "icmp"
   }
 }
+
+resource "google_compute_firewall" "kubernetes_the_hard_way_allow_external" {
+  name        = "kubernetes-the-hard-way-allow-external"
+  description = "A firewall rule to allow communication from outside the VPC using SSH, ICMP, and HTTPS."
+  network     = google_compute_network.kubernetes_the_hard_way.self_link
+
+  source_ranges = [
+    "0.0.0.0/0",
+  ]
+
+  allow {
+    protocol = "tcp"
+    ports    = ["22", "6443"]
+  }
+  allow {
+    protocol = "icmp"
+  }
+}
