@@ -13,6 +13,7 @@ This repo contains the Terraform that sets up Kubernetes using Google Cloud Plat
 ## Documentation
 
 - [The Network](/docs/network.md)
+- [The Compute Instances](/docs/compute.md)
 
 ## Workflow
 
