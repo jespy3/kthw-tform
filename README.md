@@ -12,14 +12,20 @@ This repo contains the Terraform that sets up Kubernetes using Google Cloud Plat
 
 ## Workflow
 
-1. Make changes to terraform.
+### Starting a session
 1. `terraform init`
+
+### Each change
+1. Make changes to terraform.
 1. `terraform plan`
 1. `terraform apply`
 1. See changes in GCP console.
 1. `terraform fmt`
 1. Update documentation as necessary.
 1. Commit changes to master.
+
+### Finishing a session
+1. `terraform destroy`
 
 ## References
 
