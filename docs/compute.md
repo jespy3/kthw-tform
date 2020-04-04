@@ -16,4 +16,33 @@ Specs:
     - `service-control`
     - `logging-write`
     - `monitoring`
-- _IP Addresses_ - `network_ip` is empty for under the subnetwork to indicate that the IP addresses are dynamically assigned until termination (instead of static/always existing).
+- _IP Addresses_ - `network_ip` to define their private IP
+- _External IP_ - The `access_config`'s `nat_ip` is defined as blank to automatically assign a public IP for internet access.
+
+**Command Line:**
+```
+  gcloud compute instances list
+```
+
+**Console:** `Compute Engine > VM Instances`
+
+## Kubernetes Workers
+
+Two compute instances to **host the Kubernetes worker nodes**. Each needs a pod subnet allocation from the Kubes cluster CIDR range which is used to give subnet allocations to compute instances at runtime. Here, the cluster's CIDR range is `10.200.0.0/16` which supports 256 subnets.
+
+Specs/Command Line/Console: (Same as the controllers above)
+
+## Configuring SSH Access
+
+Connecting to these compute instances for the first time will generate SSH keys for you and store them in the project metadata.
+
+SSH-ing into the `controller-0` instance
+```
+  gcloud compute ssh controller-0
+```
+
+Entering a passphrase, the your generated SSH keys are stored in your machine @ `/home/$USER/.ssh/google_compute_engine` for your private key and `/home/$USER/.ssh/google_compute_engine.pub` for your public key.
+
+In the `controller-0` instance, your public key is stored as part of the `home/$USER/.ssh/authorized_keys` file. Your machine will provide its public key to the instance to authorise itself.
+
+Run `exit` to exit your SSH session.
