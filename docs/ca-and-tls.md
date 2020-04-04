@@ -32,3 +32,7 @@ The **Kubes Controller Manager** uses a key pair to create **Service Account** t
 **CloudFlare** - A web infrastructure and security company.
 **cfssl** - CloudFlare's tool to sign, verify and bundle TLS certificates.
 **TLS** - Transport Layer Security. The newer version of SSL (Secure Sockets LAyer), both are cryptographic protocols to authenticate data transfer between things on the internet.
+
+## References
+
+-[How TLS/SSL works](https://github.com/gruntwork-io/private-tls-cert)
