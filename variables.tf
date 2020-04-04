@@ -22,10 +22,20 @@ variable "gcp_project" {
   default     = "solid-linker-238123"
 }
 
-variable "ca_public_key_file_path" {
+
+# Worker Nodes
+variable "worker_node_count" {
+  type = number
+  description = "Number of worker nodes."
+  default = 3
+}
+
+
+# CAs and TLS
+variable "certs_directory_path" {
   type        = string
   description = "Path to the CAs public key file."
-  default     = "./.certs/ca.pem"
+  default     = "./.certs"
 }
 
 variable "private_key_algorithm" {
@@ -38,4 +48,10 @@ variable "private_key_rsa_bits" {
   type        = string
   description = "The size of the generated RSA key in bits."
   default    = "2048"
+}
+
+variable "permissions" {
+   type = string
+   description = "The Unix file permission to assign to the cert files (e.g. 0600)."
+   default = "0600"
 }
