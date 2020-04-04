@@ -21,3 +21,21 @@ variable "gcp_project" {
   description = "The GCP project name."
   default     = "solid-linker-238123"
 }
+
+variable "ca_public_key_file_path" {
+  type        = string
+  description = "Path to the CAs public key file."
+  default     = "./.certs/ca.pem"
+}
+
+variable "private_key_algorithm" {
+  type        = string
+  description = "The algorithm used for generating a private key."
+  default    = "RSA"
+}
+
+variable "private_key_rsa_bits" {
+  type        = string
+  description = "The size of the generated RSA key in bits."
+  default    = "2048"
+}
