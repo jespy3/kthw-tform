@@ -44,7 +44,7 @@ resource "google_compute_instance" "controller" {
 
 # Workers
 resource "google_compute_instance" "worker" {
-  count = 2
+  count = 3
 
   name        = "worker-${count.index}"
   description = "Instances for the Kubes worker nodes."
