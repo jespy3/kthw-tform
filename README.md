@@ -14,6 +14,8 @@ This repo contains the Terraform that sets up Kubernetes using Google Cloud Plat
 
 - [The Network](/docs/network.md)
 - [The Compute Instances](/docs/compute.md)
+- [Provisioning a CA and Generating TLS Certificates](/docs/ca-and-tls.md)
+- [Generating Kubernetes Configuration Files for Authentication](/docs/kubes-configuration-files.md)
 
 ## Workflow
 
