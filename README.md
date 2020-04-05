@@ -6,7 +6,7 @@ This repo contains the Terraform that sets up Kubernetes using Google Cloud Plat
 1. Log in to the GCP console and navigate to `IAM & Admin > Service Accounts`.
 1. Save the json file for the key of the terraform service account/
 1. In the terminal, run `export GOOGLE_CLOUD_KEYFILE_JSON=<path>` where `<path>` is the location of your key's json file.
-1. Navigate to the root of the project.
+1. Navigate to the `/infra` directory of the project.
 1. Run `terraform plan`.
 1. Run `terraform apply`.
 
