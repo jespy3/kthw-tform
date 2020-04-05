@@ -25,6 +25,25 @@ The services in the **Control Plane** have the subnet IP range `10.32.0.0/24` re
 
 The **Kubes Controller Manager** uses a key pair to create **Service Account** tokens.
 
+## Copying these certs to the Kubes nodes
+
+The certs and private keys are added to each Kubes instance/node using:
+```
+  gcloud compute scp <file> <file> <instance-name>:<location>
+```
+
+- **Worker instances** - The CA cert, and worker node cert and private key files are all copied to the home directory of these worker instances (`~/`).
+- **Controller instances** - - The CA cert and private key, Kubes API Server cert and private key, and the Service Account cert and private key files are all copied to the home directory of these controller instances (`~/`).
+
+_Validation:_
+SSHing into an instance and checking if the file is listed at `~/`
+```
+  gcloud compute ssh <instance-name>
+
+  cd ~/
+  ls
+```
+
 ## Glossary
 
 **PKI** - Public Key Infrastructure. An artchitecture that associates public keys with people/organisations by a CA (Certificate Authority).

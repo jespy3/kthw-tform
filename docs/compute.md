@@ -18,6 +18,7 @@ Specs:
     - `monitoring`
 - _IP Addresses_ - `network_ip` to define their private IP
 - _External IP_ - The `access_config`'s `nat_ip` is defined as blank to automatically assign a public IP for internet access.
+- The CA cert and private key, Kubes API Server cert and private key, and the Service Account cert and private key files are all copied to the home directory of these controller instances (`~/`).
 
 **Command Line:**
 ```
@@ -31,6 +32,7 @@ Specs:
 Two compute instances to **host the Kubernetes worker nodes**. Each needs a pod subnet allocation from the Kubes cluster CIDR range which is used to give subnet allocations to compute instances at runtime. Here, the cluster's CIDR range is `10.200.0.0/16` which supports 256 subnets.
 
 Specs/Command Line/Console: (Same as the controllers above)
+- The CA cert, and worker node cert and private key files are all copied to the home directory of these worker instances (`~/`).
 
 ## Configuring SSH Access
 
