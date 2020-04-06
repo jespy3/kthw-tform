@@ -46,11 +46,11 @@ SSHing into an instance and checking if the file is listed at `~/`
 
 ## Glossary
 
-**PKI** - Public Key Infrastructure. An artchitecture that associates public keys with people/organisations by a CA (Certificate Authority).
-**CA** - Certificate Authority. An entity that issues digital certificates which ensures the ownership of a public key by the entity that owns the certificate.
-**CloudFlare** - A web infrastructure and security company.
-**cfssl** - CloudFlare's tool to sign, verify and bundle TLS certificates.
-**TLS** - Transport Layer Security. The newer version of SSL (Secure Sockets LAyer), both are cryptographic protocols to authenticate data transfer between things on the internet.
+- **PKI** - Public Key Infrastructure. An artchitecture that associates public keys with people/organisations by a CA (Certificate Authority).
+- **CA** - Certificate Authority. An entity that issues digital certificates which ensures the ownership of a public key by the entity that owns the certificate.
+- **CloudFlare** - A web infrastructure and security company.
+- **cfssl** - CloudFlare's tool to sign, verify and bundle TLS certificates.
+- **TLS** - Transport Layer Security. The newer version of SSL (Secure Sockets LAyer), both are cryptographic protocols to authenticate data transfer between things on the internet.
 
 ## References
 
