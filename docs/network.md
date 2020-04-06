@@ -30,3 +30,7 @@ There is a static IP address that will be attached to the external load balancer
 ```
 
 **Console:** `VPC Network > External IP addresses`
+
+
+### What's Next?
+- [Compute Instances](/docs/compute.md)

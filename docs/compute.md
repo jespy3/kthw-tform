@@ -48,3 +48,6 @@ Entering a passphrase, the your generated SSH keys are stored in your machine @ 
 In the `controller-0` instance, your public key is stored as part of the `home/$USER/.ssh/authorized_keys` file. Your machine will provide its public key to the instance to authorise itself.
 
 Run `exit` to exit your SSH session.
+
+### What's Next?
+- [Certificate Authorities and TLS](/docs/ca-and-tls.md)

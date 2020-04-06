@@ -52,6 +52,9 @@ SSHing into an instance and checking if the file is listed at `~/`
 - **cfssl** - CloudFlare's tool to sign, verify and bundle TLS certificates.
 - **TLS** - Transport Layer Security. The newer version of SSL (Secure Sockets LAyer), both are cryptographic protocols to authenticate data transfer between things on the internet.
 
+### What's Next?
+- [Kubeconfig files](/docs/kubes-configuration-files.md)
+
 ## References
 
 -[How TLS/SSL works](https://github.com/gruntwork-io/private-tls-cert)
