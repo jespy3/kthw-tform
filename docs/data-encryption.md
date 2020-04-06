@@ -39,3 +39,6 @@ SSHing into an instance and checking if the file is listed at `~/`
   cd ~/
   ls
 ```
+
+### What's Next?
+- [Bootstrapping the etcd cluster](/docs/etcd.md)
